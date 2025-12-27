@@ -1,0 +1,71 @@
+body{
+    background-image:url("images/miffy_background.png");
+    background-size: 500px;
+    background-color: rgb(255, 218, 218);
+    background-blend-mode: lighten;
+    text-align: center;
+    font-family: "Fredoka", sans-serif;
+}
+
+#title{
+    margin-top:100px;
+    line-height:10px;
+    font-size: 60px;
+}
+
+#subtitle{
+    opacity: 0.7;
+    font-size: 30px;
+    margin: bottom 20px;
+}
+
+#calendarContainer{
+    display:flex;
+    justify-content: end;
+}
+
+#calendarDiv{
+    background-color: white;
+
+    /* rounds the corners */
+    border-radius: 10px 10px 20px 20px;
+
+    margin:auto;
+    align-content: center;
+    text-align: center;
+
+    /* better to set the white background width in percent than px - makes it flexible */
+    width: 85%;
+}
+
+#calendarHeading{
+/*  styling "My New Habit" roq*/
+    display:flex;
+    justify-content: space-between;
+    border-radius: 10px 10px 0px 0px;
+    border: 2px solid black;
+    padding: 0px 20px;
+    font-size: 20px;
+    background-color: pink;
+    line-height: 0px;
+}
+
+#calendarContent{
+    padding:20px;
+    border:2px solid black;
+}
+
+.days{
+    display: flex;
+}
+
+.day{
+    width: 30px;
+    margin: 5px;
+    padding: 10px;
+    font-size: 15px;
+    text-align: center;
+    border-radius: 20px;
+    border:2px solid black;
+    background-color: pink;
+}
