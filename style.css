@@ -34,8 +34,6 @@ body{
     align-content: center;
     text-align: center;
 
-    /* better to set the white background width in percent than px - makes it flexible */
-    width: 85%;
 }
 
 #calendarHeading{
@@ -53,6 +51,7 @@ body{
 #calendarContent{
     padding:20px;
     border:2px solid black;
+    border-radius: 0px 0px 10px 10px;
 }
 
 .days{
