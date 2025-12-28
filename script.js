@@ -42,3 +42,5 @@ var daysInThisMonth = daysInTheMonthList[currentMonth];
 
 var daysCompleted = 0;
 var totalDays = document.getElementById("totalDays");
+
+//stopped at 4:09
