@@ -21,11 +21,10 @@ var months = [
 
 // SET THE CORRECT MONTH
 var title = document.getElementById("title");
-title.innerHTML = months[currentMonth];
+title.innerHTML = "🐰"+months[currentMonth]+"🐰";
 
 //UPDATE THE CALENDAR INFO
 var habitTitle = document.getElementById("habitTitle");
-
 habitTitle.onclick = function(){
     let habits = prompt("What's your habit", habitTitle.innerHTML)
     if(habits.length == 0){
@@ -38,10 +37,11 @@ habitTitle.onclick = function(){
 
 // SET THE TOTAL DAYS
 var daysInTheMonthList = [31,28,31,30,31,30,31,31,30,31,30,31];
-var daysInThisMonth = daysInTheMonthList;[currentMonth];
+var daysInThisMonth = daysInTheMonthList[currentMonth];
 
 var daysCompleted = 0;
-var totalDays = document.getElementById;("totalDays");
+var totalDays = document.getElementById("totalDays");
+totalDays.innerHTML="0/"+daysInThisMonth;
 
 //SET UP THE CALENDAR DAYS
 var dayCount = 0;
