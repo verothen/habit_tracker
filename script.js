@@ -51,8 +51,23 @@ var days = document.getElementsByClassName("days");
 for(var i=0;i<days.length; i++){
     var day = days[rowCount].getElementsByClassName("day");
     for (var j=0;j<day.length;j++){
+
+        //add a border to the current date
         if(dayCount==currentDate-1){
+            day[j].setAttribute("style","color:rgb(234,1,144);");
             day[j].setAttribute("style","border:2px solid black");
         }
+
+        //update the correct date number and id and hide any excess numbers
+        if(dayCount<daysInThisMonth){
+            day[j].innerHTML=dayCount+1;
+            day[j].setAttribute("id","day"+(dayCount+1));
+            dayCount++; //repeat for every day
+        } else{
+            day[j].innerHTML="";
+            day[j].setAttribute("style","background-color:white;");
+        }
     }
+    rowCount++; //repeat for every row
 }
+// stopped at 11:11
