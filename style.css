@@ -24,6 +24,11 @@ body{
     justify-content: center;
 }
 
+#habitTitle{
+    color:blue;
+    text-decoration: wavy underline;
+}
+
 #calendarDiv{
     background-color: white;
 
@@ -36,7 +41,7 @@ body{
 }
 
 #calendarHeading{
-/*  styling "My New Habit" roq*/
+/*  styling "Choose a habit"*/
     display:flex;
     justify-content: space-between;
     border-radius: 10px 10px 0px 0px;

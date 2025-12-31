@@ -26,7 +26,7 @@ title.innerHTML = "🐰"+months[currentMonth]+"🐰";
 //UPDATE THE CALENDAR INFO
 var habitTitle = document.getElementById("habitTitle");
 habitTitle.onclick = function(){
-    let habits = prompt("What's your habit", habitTitle.innerHTML)
+    let habits = prompt("What's your habit?", habitTitle.innerHTML)
     if(habits.length == 0){
         habitTitle.innerHTML = "Click to set your habit";
      }else{
