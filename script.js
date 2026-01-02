@@ -126,7 +126,19 @@ for (var i=0; i<currentDate;i++){
         totalDays.innerHTML=daysCompleted+"/"+daysInThisMonth;
         console.log(daysCompleted, currentDate);
         if(daysCompleted===currentDate){
-            alert("great progress");
+            var randNum=Math.floor(Math.random()*20)+1;
+            if (randNum<=5){
+                alert("Great job! Today's fortune cookie says: Decide that you want it more than you are afraid of it.");
+            }
+            else if (randNum>5 && randNum<=10){
+                alert("Keep it up! Today's fortune cookie says: Rome wasn't built in a day, but they were laying bricks every hour.");
+            }
+            else if (randNum>10 && randNum<=15){
+                alert("Proud of you! Today's fortune cookie says: Decide that you want it more than you are afraid of it.");
+            }
+            else{
+                alert("You did it! Today's fortune cookie says: Nothing is worth more than today.");
+            }
         }
     }
 }
